@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ANGGITNURF_120154362_MODUL2</string>
+    <string name="Pesan">Pesan Sekarang</string>
+    <string name="take_away">Take Away</string>
+    <string name="dine_in">Dine In</string>
+    <string name="pilih_pesanan">Pilih Pesanan</string>
+
+
+    <string-array name="labels_array">
+        <item>Meja 1</item>
+        <item>Meja 2</item>
+        <item>Meja 3</item>
+        <item>Meja 4</item>
+        <item>Meja 5</item>
+    </string-array>
+    <string name="title_activity_detail_menu">DetailMenu</string>
+
+</resources>

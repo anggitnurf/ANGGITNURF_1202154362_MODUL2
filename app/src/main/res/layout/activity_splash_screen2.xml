@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anggit.android.anggitnurf_120154362_modul2.SplashScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/restoran"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:textSize="20sp"
+        android:text="Pilih Menu" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/textView"
+        android:id="@+id/radio_group">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:text="@string/dine_in" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioButton"
+            android:layout_alignStart="@+id/radioButton"
+            android:layout_below="@+id/radioButton"
+            android:text="@string/take_away"
+
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Pesan"
+        android:onClick="PesanSekarang"/>
+
+
+</RelativeLayout>

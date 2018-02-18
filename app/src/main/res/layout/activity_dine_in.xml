@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anggit.android.anggitnurf_120154362_modul2.DineIn">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text=" Detail Customer :"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Name"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="17dp"
+        android:text="No.Meja :"
+        android:textSize="15dp"/>
+
+    <Spinner
+        android:id="@+id/label_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"></Spinner>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/label_spinner"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/pilih_pesanan"
+        android:onClick="PesanSekarang"/>
+
+
+</RelativeLayout>
